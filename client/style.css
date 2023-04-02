@@ -1,3 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.bg-darkmode {
+    background-color: #2c2c2c;
+}
+
+.bg-darkmode-box {
+    background-color: #2c2c2c;
+}
+
+.bg-darkmode-input {
+    background-color: #3c3c3c;
+}
