@@ -21,6 +21,7 @@
         break;
       case 'activeUsers':
         activeUsers = message.users;
+        updateActiveUsers(activeUsers);
         break;
       case 'typing':
         let typingUsers = message.users
