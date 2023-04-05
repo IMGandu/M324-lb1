@@ -50,13 +50,3 @@ const generateMessage = (message, myUser) => {
     `;
   return messageElement;
 };
-const updateActiveUsers = (users) => {
-  const activeUsersElement = document.getElementById('activeUsers');
-  activeUsersElement.innerHTML = '';
-  users.forEach((user) => {
-    const userElement = document.createElement('li');
-    userElement.textContent = user.name;
-    userElement.classList.add('text-white', 'py-1');
-    activeUsersElement.appendChild(userElement);
-  });
-};
