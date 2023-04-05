@@ -1,4 +1,4 @@
-import { WebSocket } from 'ws';
+import { WebSocket } from "ws";
 
 export interface User {
   id: string;
@@ -7,7 +7,7 @@ export interface User {
 }
 
 export interface Message {
-  type: 'newUser' | 'message' | 'activeUsers' | 'typing';
+  type: "newUser" | "message" | "activeUsers" | "typing";
   user?: User;
   users?: User[];
   message?: string;

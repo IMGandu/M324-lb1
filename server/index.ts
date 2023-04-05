@@ -10,6 +10,8 @@ import { WebSocket } from 'ws';
 const app = express();
 const server = http.createServer(app);
 
+const myVar = 1;
+
 // create a livereload server
 const env = process.env.NODE_ENV || 'development';
 if (env !== 'production' && env !== 'test') {
@@ -45,9 +47,9 @@ if (env !== 'test') {
   startServer(serverPort);
 }
 
-const waitForSocketState = (socket: WebSocket, state: number) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
+const waitForSocketState = (socket: WebSocket, state: any) => {
+  return new Promise(function (resolve) {
+    setTimeout(function () {
       if (socket.readyState === state) {
         resolve(undefined);
       } else {
@@ -56,5 +58,9 @@ const waitForSocketState = (socket: WebSocket, state: number) => {
     }, 5);
   });
 };
+
+app.get('/healthcheck', (req: Request, res: Response) => {
+  res.status(200).json({ message: 'OK' });
+});
 
 export { startServer, waitForSocketState };
