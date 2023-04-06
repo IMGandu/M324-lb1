@@ -107,3 +107,6 @@ dist
 .vscode-test
 
 build
+
+# Token
+team2.yaml
