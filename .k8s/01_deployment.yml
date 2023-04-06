@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: m324
-          image: ${IMAGE_TAG}
+          image: shankentsang/m324:latest
           command:
             - /bin/sh
             - "-c"
