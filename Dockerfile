@@ -10,6 +10,10 @@ COPY package*.json ./
 # Install the dependencies
 RUN npm install
 
+RUN npm install eslint
+
+RUN npm install jest
+
 # Copy the source code to the container
 COPY . .
 
