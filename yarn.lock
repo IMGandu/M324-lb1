@@ -1527,7 +1527,7 @@
   "resolved" "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.0.tgz"
   "version" "3.4.0"
 
-"eslint@*", "eslint@^6.0.0 || ^7.0.0 || ^8.0.0", "eslint@^6.0.0 || ^7.0.0 || >=8.0.0", "eslint@>=7.0.0", "eslint@>=7.28.0":
+"eslint@*", "eslint@^6.0.0 || ^7.0.0 || ^8.0.0", "eslint@^6.0.0 || ^7.0.0 || >=8.0.0", "eslint@^8.37.0", "eslint@>=7.0.0", "eslint@>=7.28.0":
   "integrity" "sha512-NU3Ps9nI05GUoVMxcZx1J8CNR6xOvUT4jAUMH5+z8lpp3aEdPVCImKw6PWG4PY+Vfkpr+jvMpxs/qoE7wq0sPw=="
   "resolved" "https://registry.npmjs.org/eslint/-/eslint-8.37.0.tgz"
   "version" "8.37.0"
