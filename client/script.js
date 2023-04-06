@@ -24,7 +24,14 @@
         updateActiveUsers(activeUsers);
         break;
       case 'typing':
-        typingUsers = message.users;
+        let typingUsers = message.user;
+        let typingUserList = '';
+        for (let i = 0; i < typingUsers.length; i++) {
+          typingUserList += typingUsers[i].name + ' schreibt . . .';
+        }
+        
+        const typingUsersDiv = document.getElementById("typingUsers");
+        typingUsersDiv.textContent = typingUserList;
         break;
       default:
         break;
