@@ -12,10 +12,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - chatapplication.m324.hackerman.ch
-      secretName: chatapplication.m324.hackerman.ch-tls
+        - crazychat.m324.hackerman.ch
+      secretName: crazychat.m324.hackerman.ch-tls
   rules:
-    - host: chatapplication.m324.hackerman.ch
+    - host: crazychat.m324.hackerman.ch
       http:
         paths:
           - path: /
