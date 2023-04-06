@@ -1,8 +1,5 @@
 name: CD Pipeline
-on:
-  pull_request:
-    branches:
-      - master
+on: [push]
 env:
   IMAGE_TAG: shankentsang/m324:${{ github.sha }}
 jobs:
@@ -16,6 +13,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: set up buildx
+        uses: docker/setup-buildx-action@v2
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v3
         with:
