@@ -1,5 +1,8 @@
 name: CD Pipeline
-on: [push]
+on:
+  pull_request:
+    branches:
+      - master
 env:
   IMAGE_TAG: shankentsang/m324:${{ github.sha }}
 jobs:
